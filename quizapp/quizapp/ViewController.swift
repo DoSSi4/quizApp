@@ -15,11 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func playQuiz(_ sender: Any) {
+    @IBAction func playQuiz(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        self.present(vc, animated: true)
     }
-    
 }
-
